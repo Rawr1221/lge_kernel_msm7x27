@@ -421,6 +421,7 @@ EXPORT_SYMBOL(aat28xx_ldo_set_level);
 static void aat28xx_power_internal(struct aat28xx_driver_data *drvdata, int on)
 {
 #ifdef CONFIG_MACH_MSM7X27_THUNDERG
+    mdelay(20);
     return;
 #endif
 #ifdef CONFIG_MACH_MSM7X27_ALESSI
